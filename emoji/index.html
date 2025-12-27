@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojee - Emoji Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Emojee - Emoji 🔍 Application</h1>
+
+        <div class="outer">
+            <div class="button-list">
+                <button class="item" data-category="all">All</button>
+                <button class="item" data-category="face">Face</button>
+                <button class="item" data-category="heart">Heart</button>
+                <button class="item" data-category="book">Book</button>
+                <button class="item" data-category="hand">Hand</button>
+                <button class="item" data-category="sport">Sport</button>
+                <button class="item" data-category="flag">Flag</button>
+            </div>
+
+            <input 
+                type="search" 
+                id="search" 
+                placeholder="🔍 Search Emoji">
+        </div>
+
+        <!-- FIXED: changed from class to id -->
+        <div id="emoji-list" class="emoji-list"></div>
+    </div>
+
+    <!-- Emoji data -->
+    <script src="main.js"></script>
+
+    <!-- App logic -->
+    <script src="script.js"></script>
+
+</body>
+</html>
